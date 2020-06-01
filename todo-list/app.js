@@ -1,7 +1,7 @@
 const app = new Vue({
   el: "#app",
   data: {
-    title: "Hello D4Y",
+    title: "Hello!",
     newTodo: "",
     todos: [],
   },

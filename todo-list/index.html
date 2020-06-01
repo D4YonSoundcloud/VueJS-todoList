@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://ez-css.now.sh" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
     <style>
       .done {
         text-decoration: line-through;
@@ -15,7 +16,7 @@
     <main id="app">
       <h3>{{title}}</h3>
       <form @submit.prevent="addTodo">
-        <label for="newTodo">New Todo</label>
+        <label for="newTodo">Create a new Todo</label>
         <input
           v-model="newTodo"
           type="text"
