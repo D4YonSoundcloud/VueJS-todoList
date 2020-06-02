@@ -1,0 +1,22 @@
+{
+  "name": "vue-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d todo-list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D4YonSoundcloud/VueJS-todoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D4YonSoundcloud/VueJS-todoList/issues"
+  },
+  "homepage": "https://github.com/D4YonSoundcloud/VueJS-todoList#readme",
+  "dependencies": {
+    "gh-pages": "^3.0.0"
+  }
+}
