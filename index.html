@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://ez-css.now.sh" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Todo List</title>
     <style>
@@ -33,10 +37,19 @@
       <ul>
         <li v-for="todo in todos">
           <span :class="{done: todo.done}">{{todo.title}}</span>
-          <button class="remove" @click="removeTodo(todo)" type="button">delete</button>
-          <label for="newTodo"></label> <input type="checkbox" v-model="todo.done" class="remove" />
+          <button class="remove" @click="removeTodo(todo)" type="button">
+            delete
+          </button>
+          <label class="label" for="done">Done?</label>
+          <input
+            type="checkbox"
+            name="done"
+            v-model="todo.done"
+            class="remove"
+          />
         </li>
       </ul>
+      <h3 class="footer">{{footer}}</h3>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

@@ -3,6 +3,7 @@ const app = new Vue({
   data: {
     title: "Simple TodoList",
     alert: "Please add a todo",
+    footer: "Created by Matt Day, using VueJs",
     isAlert: false,
     newTodo: "",
     todos: [],
